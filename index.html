@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Jogo da Forca</title>
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  
+  <body>
+    <header>
+        <a href="http://www.alura.com.br" rel="nofollow" target="_blank">
+        <img src="https://www.alura.com.br/assets/img/challenges/oracle-one/logo_oracleAlura-ptbr.svg" title="alura" alt="logo_alura" id="logo">
+      </a>
+    </header>
+
+    <main>
+      <div class="jogo-forca">
+        <h1><img src="img/forca.jpg"></h1>
+        <nav>
+          <ul class="button-input-inicial">
+            <li><button class="btn" id="iniciar-jogo">Iniciar jogo</button></li>
+            <li><input class="text-input" type="text" id="input-nova-palavra" placeholder="Escreva uma nova palavra"></li>
+            <li><button class="btn" id="nova-palavra">Adicionar Palavra</button></li>
+            <li><button class="btn" id="reload" onClick="window.location.reload();">Jogar novamente</button></li>
+          </ul>
+        </nav>
+      </div>
+    
+      <div class="canvas">
+        <canvas id="forca" height="400px" width="500px"></canvas>
+      </div> 
+
+      <div id="traco">
+        
+      </div>
+      <div id='letra'></div>
+
+        <div class="container">
+          <div id='keyboard'class="wrapper">
+              <div class="keys">
+                 <input id='Q' type="button" value="Q">
+                 <input id='W' type="button" value="W">
+                 <input id='E'type="button" value="E">
+                 <input id='R'type="button"  value="R">
+                 <input id='T'type="button" value="T">
+                 <input id='Y'type="button" value="Y">
+                 <input id='U'type="button" value="U">
+                 <input id='I'type="button" value="I">
+                 <input id='O'type="button" value="O">
+                 <input id='P'type="button" value="P">
+              </div>
+              <div class="keys">
+                 <input id='A'type="button"  value="A">
+                 <input id='S'type="button" value="S">
+                 <input id='D'type="button" value="D">
+                 <input id='F'type="button" value="F">
+                 <input id='G'type="button" value="G">
+                 <input id='H'type="button" value="H">
+                 <input id='J'type="button" value="J">
+                 <input id='K'type="button" value="K">
+                 <input id='L'type="button" value="L">
+              </div>
+              <div class="keys">
+                 <input id='Z'type="button" value="Z">
+                 <input id='X'type="button" value="X">
+                 <input id='C'type="button" value="C">
+                 <input id='V'type="button" value="V">
+                 <input id='B'type="button" value="B">
+                 <input id='N'type="button" value="N">
+                 <input id='M'type="button" value="M">
+              </div>
+          </div>
+        </div>
+    </main>
+    <footer>
+      <p>&copy; 2022 - Todos os direitos reservados - Igor Monteiro</p>
+      <a href="https://github.com/igorperonico" target="_blank">
+        <img src="img/github.png" width="50" title="Github"  id="github"/>
+      </a>
+      <a href="https://www.linkedin.com/in/igor-monteiro-03b528160/" target="_blank">
+        <img src="https://www.freepnglogos.com/uploads/linkedin-logo-design-30.png" width="40" title="Linkedin"  id="linkedin"/>
+      </a>
+    </footer> 
+    <script type="text/javascript" src="js/canvas.js"></script>
+    <script type="text/javascript" src="js/forca.js"></script>
+  </body>
+</html>
